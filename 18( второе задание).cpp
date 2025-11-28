@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-// Функция вычисления радиуса описанной окружности
+
 double radiusOfCircumscribedCircle(double a) {
     return a / sqrt(3);
 }
