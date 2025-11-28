@@ -19,4 +19,5 @@ int main() {
    
    // Вывод результата
    std::cout << "Результат:" << result << std::endl;
+   return 0;
 }
