@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-   float a, b, c;
+   float a, b, c, result;
    
   
    cout << "Введите значение a, b , c:";
