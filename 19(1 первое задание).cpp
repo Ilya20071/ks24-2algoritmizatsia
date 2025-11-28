@@ -7,17 +7,13 @@ int main() {
    float a, b, c;
    
   
-   cout << "Введите значение a:";
-   cin >> a;
-  cout << "Введите значение b: ";
-   cin >> b;
-   cout << "Введите значение c:";
-   cin >> c;
+   cout << "Введите значение a, b , c:";
+   cin >> a >> b >> c;
    
    
    float result = (b + sqrt(b*b + 4*a*c)) / (2*a) - pow(a, 3) + pow(b, -2);
    
   
-   std::cout << "Результат:" << result << endl;
+   cout << "Результат:" << result << endl;
    return 0;
 }
