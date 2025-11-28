@@ -4,20 +4,20 @@
 using namespace std;
 
 int main() {
-   double a, b, c;
+   float a, b, c;
    
   
-   std::cout << "Введите значение a:";
-   std::cin >> a;
-   std::cout << "Введите значение b: ";
-   std::cin >> b;
-   std::cout >> "Введите значение c:";
-   std::cin >> c;
+   cout << "Введите значение a:";
+   cin >> a;
+  cout << "Введите значение b: ";
+   cin >> b;
+   cout << "Введите значение c:";
+   cin >> c;
    
    
-   double result = (b + sqrt(b*b + 4*a*c)) / (2*a) - pow(a, 3) + pow(b, -2);
+   float result = (b + sqrt(b*b + 4*a*c)) / (2*a) - pow(a, 3) + pow(b, -2);
    
   
-   std::cout << "Результат:" << result << std::endl;
+   std::cout << "Результат:" << result << endl;
    return 0;
 }
