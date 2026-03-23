@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int calculateY(int x) {
+    if (-40 <= x && x < 0) {
+        return 40;
+    } else if (0 <= x && x < 40) {
+        return -40;
+    } else {
+        return 0;
+    }
+}
+
+int main() {
+    for (int x = -50; x <= 50; ++x) {
+        int y = calculateY(x);
+        cout << "x = " << x << "y = " << y << endl;
+    }
+    
+    return 0;
+}
