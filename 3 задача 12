@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A, B;
+
+    // Границы диапазона
+    cout << "Введите A: ";
+    cin >> A;
+    cout << "Введите B: ";
+    cin >> B;
+
+    // Корректность диапазона
+    if (A > B) {
+        cout << "Ошибка: A должно быть меньше или равно B." << endl;
+        return 1;
+    }
+
+    cout << "Числа из диапазона [" << A << ", " << B << "], оканчивающиеся на чётную цифру:" << endl;
+
+    // Перебор чисел в диапазоне
+    for (int x = A; x <= B; ++x) {
+        int lastDigit = abs(x) % 10;
+        if (lastDigit % 2 == 0) {
+            cout << x << " ";
+        }
+    }
+    cout << endl;
+
+    return 0;
+}
