@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+const char* programs[][2] = {
+    {"Новостной выпуск", "Утреннее шоу"},
+    {"Киносеанс", "Научно-познавательная передача"},
+    {"Спортивные трансляции", "Музыкальное шоу"},
+    {"Детские мультфильмы", "Образовательные передачи"},
+    {"Телешоу", "Документальные фильмы"}
+};
+
+int main() {
+    int channelNumber;
+    
+    
+    cout << "Введите номер телевизионного канала (от 1 до 5): ";
+    cin >> channelNumber;
+    
+   
+    if (channelNumber < 1 || channelNumber > 5) {
+        cout << "Ошибка: неверный номер канала.\n";
+        return 1;
+    }
+    
+  
+    int index = channelNumber - 1;
+    
+    cout << "\nНаиболее популярные программы канала " << channelNumber << ":\n";
+    cout << "- " << programs[index][0] << endl;
+    cout << "- " << programs[index][1] << endl;
+    
+    return 0;
+}
