@@ -12,7 +12,7 @@ const char* programs[][2] = {
 int main() {
     int channelNumber;
     
-    
+     // Номер канала
     cout << "Введите номер телевизионного канала (от 1 до 5): ";
     cin >> channelNumber;
     
@@ -24,7 +24,7 @@ int main() {
     
   
     int index = channelNumber - 1;
-    
+     // вывод популярных каналов
     cout << "\nНаиболее популярные программы канала " << channelNumber << ":\n";
     cout << "- " << programs[index][0] << endl;
     cout << "- " << programs[index][1] << endl;
